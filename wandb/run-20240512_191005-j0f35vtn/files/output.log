@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/yyh/zyy/IDML-main/train.py", line 107, in <module>
+    trn_dataset = FIW2(fiw_data_path)
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/yyh/zyy/IDML-main/dataset/FIW2.py", line 18, in __init__
+    self.sample_list=self.load_sample()
+                     ^^^^^^^^^^^^^^^^^^
+  File "/home/yyh/zyy/IDML-main/dataset/FIW2.py", line 23, in load_sample
+    f = open(self.sample_path, "r+", encoding='utf-8')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yyh/zzy/IDML-main/sample0/train_sort_A2_m.txt'

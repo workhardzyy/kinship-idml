@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/yyh/zyy/IDML-main/train.py", line 108, in <module>
+    val_dataset = FIW2(fiw_data_val_path, mode ='val')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yyh/zyy/IDML-main/dataset/FIW2.py", line 18, in __init__
+    self.sample_list=self.load_sample()
+                     ^^^^^^^^^^^^^^^^^^
+  File "/home/yyh/zyy/IDML-main/dataset/FIW2.py", line 35, in load_sample
+    sample_list.append([tmp[1], tmp[2], tmp[3], tmp[4],tmp[5]])
+                                                       ~~~^^^
+IndexError: list index out of range

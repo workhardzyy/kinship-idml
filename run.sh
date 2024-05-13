@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py \
+--gpu -1 \
+--loss Proxy_Anchor \
+--model resnet50 \
+--embedding-size 512 \
+--batch-size 120 \
+--lr 6e-4 \
+--dataset cub \
+--warm 5 \
+--bn-freeze 1 \
+--lr-decay-step 5

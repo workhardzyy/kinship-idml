@@ -1,0 +1,30 @@
+2024-05-10 19:35:02,221 INFO    MainThread:21797 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-05-10 19:35:02,221 INFO    MainThread:21797 [wandb_setup.py:_flush():76] Configure stats pid to 21797
+2024-05-10 19:35:02,221 INFO    MainThread:21797 [wandb_setup.py:_flush():76] Loading settings from /home/yyh/.config/wandb/settings
+2024-05-10 19:35:02,221 INFO    MainThread:21797 [wandb_setup.py:_flush():76] Loading settings from /home/yyh/zzy/wandb/settings
+2024-05-10 19:35:02,221 INFO    MainThread:21797 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-10 19:35:02,221 INFO    MainThread:21797 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-10 19:35:02,221 INFO    MainThread:21797 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'IDML-main/train.py', 'program_abspath': '/home/yyh/zzy/IDML-main/train.py', 'program': '/home/yyh/zzy/IDML-main/train.py'}
+2024-05-10 19:35:02,221 INFO    MainThread:21797 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-10 19:35:02,221 INFO    MainThread:21797 [wandb_init.py:_log_setup():521] Logging user logs to /home/yyh/zzy/wandb/run-20240510_193502-of4ejeiv/logs/debug.log
+2024-05-10 19:35:02,222 INFO    MainThread:21797 [wandb_init.py:_log_setup():522] Logging internal logs to /home/yyh/zzy/wandb/run-20240510_193502-of4ejeiv/logs/debug-internal.log
+2024-05-10 19:35:02,222 INFO    MainThread:21797 [wandb_init.py:init():561] calling init triggers
+2024-05-10 19:35:02,222 INFO    MainThread:21797 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2024-05-10 19:35:02,222 INFO    MainThread:21797 [wandb_init.py:init():611] starting backend
+2024-05-10 19:35:02,222 INFO    MainThread:21797 [wandb_init.py:init():615] setting up manager
+2024-05-10 19:35:02,224 INFO    MainThread:21797 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-10 19:35:02,227 INFO    MainThread:21797 [wandb_init.py:init():623] backend started and connected
+2024-05-10 19:35:02,230 INFO    MainThread:21797 [wandb_init.py:init():715] updated telemetry
+2024-05-10 19:35:02,231 INFO    MainThread:21797 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-05-10 19:35:05,042 INFO    MainThread:21797 [wandb_run.py:_on_init():2357] communicating current version
+2024-05-10 19:35:06,045 INFO    MainThread:21797 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-10 19:35:06,046 INFO    MainThread:21797 [wandb_init.py:init():799] starting run threads in backend
+2024-05-10 19:35:10,230 INFO    MainThread:21797 [wandb_run.py:_console_start():2335] atexit reg
+2024-05-10 19:35:10,230 INFO    MainThread:21797 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-05-10 19:35:10,230 INFO    MainThread:21797 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-05-10 19:35:10,230 INFO    MainThread:21797 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-05-10 19:35:10,231 INFO    MainThread:21797 [wandb_init.py:init():842] run started, returning control to user process
+2024-05-10 19:35:10,232 INFO    MainThread:21797 [wandb_run.py:_config_callback():1347] config_cb None None {'LOG_DIR': '../logs', 'dataset': 'cub', 'sz_embedding': 512, 'sz_batch': 16, 'nb_epochs': 60, 'gpu_id': 0, 'nb_workers': 4, 'model': 'resnet50', 'loss': 'Proxy_Anchor', 'optimizer': 'adamw', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_step': 10, 'lr_decay_gamma': 0.5, 'alpha': 32, 'mrg': 0.1, 'IPC': None, 'warm': 1, 'bn_freeze': 1, 'l2_norm': 1, 'remark': ''}
+2024-05-10 19:35:25,805 WARNING MsgRouterThr:21797 [router.py:message_loop():77] message_loop has been closed

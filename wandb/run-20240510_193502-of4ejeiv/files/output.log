@@ -1,0 +1,38 @@
+/home/yyh/miniconda3/envs/IDML/lib/python3.12/site-packages/torchvision/models/_utils.py:135: UserWarning: Using 'weights' as positional parameter(s) is deprecated since 0.13 and may be removed in the future. Please use keyword parameter(s) instead.
+  warnings.warn(
+/home/yyh/miniconda3/envs/IDML/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/home/yyh/zzy/IDML-main/train.py", line 244, in <module>
+    for batch_idx, data in enumerate(pbar):
+  File "/home/yyh/miniconda3/envs/IDML/lib/python3.12/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/home/yyh/miniconda3/envs/IDML/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/yyh/miniconda3/envs/IDML/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1346, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yyh/miniconda3/envs/IDML/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1372, in _process_data
+    data.reraise()
+  File "/home/yyh/miniconda3/envs/IDML/lib/python3.12/site-packages/torch/_utils.py", line 705, in reraise
+    raise exception
+AttributeError: Caught AttributeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/yyh/miniconda3/envs/IDML/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/yyh/miniconda3/envs/IDML/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/yyh/zzy/IDML-main/dataset/FIW2.py", line 58, in __getitem__
+    img1,img2=self.read_image(sample[0]),self.read_image(sample[1])
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yyh/zzy/IDML-main/dataset/FIW2.py", line 45, in read_image
+    img = image.load_img(abs_path, target_size=(112, 112))
+          ^^^^^^^^^^^^^^
+AttributeError: module 'tensorflow._api.v2.image' has no attribute 'load_img'
+Random Sampling
+Training parameters: {'LOG_DIR': '../logs', 'dataset': 'cub', 'sz_embedding': 512, 'sz_batch': 16, 'nb_epochs': 60, 'gpu_id': 0, 'nb_workers': 4, 'model': 'resnet50', 'loss': 'Proxy_Anchor', 'optimizer': 'adamw', 'lr': 0.0001, 'weight_decay': 0.0001, 'lr_decay_step': 10, 'lr_decay_gamma': 0.5, 'alpha': 32, 'mrg': 0.1, 'IPC': None, 'warm': 1, 'bn_freeze': 1, 'l2_norm': 1, 'remark': ''}
+Training for 60 epochs.
